@@ -24,7 +24,7 @@ function encriptar() {
         gif = gif.style.display="block";
 
     }else{
-        muneco.src = "Muñeco@2x.png";
+        muneco.src = "imagenes/";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         Swal.fire({
