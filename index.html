@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <img src="/logoAl.png" alt="Logo de Alura" class="logo">
+        </header>
+        
+
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" 
+            placeholder="Ingrese el texto aquí..."></textarea>
+        </div>
+
+        <div class="terminos">
+            <img src="/alerta.gif" alt="Imagen de alerta">
+            <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar
+            </button>
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar
+            </button>
+        </div>
+
+        <div class="encriptado">
+            <img src="./Muñeco@2x.png" alt="muñeco con una lupa en las manos" 
+            id="muneco">
+
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <img src="/celebracion.gif" alt="imagen de celebración" id="gif" style="display:none">
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                
+            </div>
+            <textarea type="evaluar" readonly id="evaluar" cols="30" rows="10"></textarea>
+            <button class="btn-copiar" id="btn-copiar" type="button" onclick="copiado()" style="display: none;">Copiar</button>
+        </div>
+        <footerc>
+            <p class="rodapie">&copy; Copyright 2024 - Encriptador de Texto - Desarrollado por: Marisol Muñoz</p>
+        </footer>
+    </div>
+    
+</body>
+    <script src = "index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
